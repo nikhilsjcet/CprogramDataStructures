@@ -71,3 +71,60 @@ int main() {
 
     return 0;
 }
+
+
+/*Algorithm
+
+Algorithm for Queue Operations (Using Array)
+
+Initialization:
+
+    Set front = -1, rear = -1
+
+    Define MAX as the maximum size of the queue (here, 5)
+
+    Declare an array queue[MAX]
+
+Enqueue Algorithm (Insert element at the rear)
+
+    Check if the queue is full:
+
+        If rear == MAX - 1, then print "Queue is full (Overflow)" and return.
+
+    If queue is empty (front == -1):
+
+        Set front = 0.
+
+    Insert the new element:
+
+        Increment rear by 1.
+
+        Set queue[rear] = value.
+
+    Print confirmation message with the enqueued value.
+
+Dequeue Algorithm (Remove element from the front)
+
+    Check if the queue is empty:
+
+        If front == -1 or front > rear, then print "Queue is empty (Underflow)" and return.
+
+    Remove element at front:
+
+        Print the dequeued element queue[front].
+
+    Increment front by 1.
+
+    If front > rear after incrementing:
+
+        Reset front = -1 and rear = -1 (queue becomes empty).
+
+Display Algorithm (Show all elements from front to rear)
+
+    Check if the queue is empty:
+
+        If front == -1 or front > rear, print "Queue is empty" and return.
+
+    Print all elements:
+
+        Loop from i = front to rear and print queue[i].*/
